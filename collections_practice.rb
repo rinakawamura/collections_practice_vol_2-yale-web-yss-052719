@@ -29,7 +29,7 @@ def count_elements(array)
       end
     end
     if included == false
-      count_array << {elem_key: elem_value, count: 1}
+      count_array << {elem_key => elem_value, count: 1}
     end
   end
   return count_array
