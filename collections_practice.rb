@@ -5,3 +5,6 @@ end
 def contain_a(array)
   return array.select{|word| word.include?("a")}
 end
+
+def first_wa(array)
+  return array.find{|word| word.start_with("wa")}
