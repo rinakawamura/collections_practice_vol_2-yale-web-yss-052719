@@ -32,5 +32,5 @@ def count_elements(array)
       count_array << {elem_key: elem_value, count: 1}
     end
   end
-  return count_array\
+  return count_array
 end
