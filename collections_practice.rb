@@ -9,3 +9,7 @@ end
 def first_wa(array)
   return array.find{|word| word.to_s.start_with?("wa")}
 end
+
+def remove_non_strings(array)
+  return array.select{|word| word.class == String}
+end
