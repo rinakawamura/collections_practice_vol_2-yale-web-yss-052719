@@ -15,15 +15,25 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  new_array = []
-  included = false
+  count_array = []
   array.each do |element|
-    new_array.each_with_index do |hash, index|
-      if hash.include?(element)
-        hash[:count] += 1
-        included = true
+    elem_key = element.keys.first
+    elem_value = element[elem_key]
+    included = false
+    count_array.each do |hash|
+      if hash.keys.include?(elem_key)
+        if hash[elem_key] == elem_value
+          hash[:count] += 1
+          included = true         
+        end
       end
     end
     if included == false
-      new_array << {element}
+      count_array << {elem_key: elem_value, count: 1}
+    end
   end
+end
+        
+    
+        
+    
