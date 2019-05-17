@@ -4,3 +4,4 @@ end
 
 def contain_a(array)
   return array.select{|word| word.include?("a")}
+end
