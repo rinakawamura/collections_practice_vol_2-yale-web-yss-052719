@@ -34,3 +34,15 @@ def count_elements(array)
   end
   return count_array
 end
+
+def merged_data(data1, data2)
+  merged = []
+  data1.each do |key|
+    name = key[:first_name]
+    data2.each do |data|
+      if name == data.keys.first
+        merged << key.merge(data[name])
+      end
+    end
+  end
+end
