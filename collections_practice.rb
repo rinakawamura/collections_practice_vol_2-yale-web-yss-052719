@@ -27,6 +27,3 @@ def count_elements(array)
     if included == false
       new_array << {element}
   end
-        
-      
-      
