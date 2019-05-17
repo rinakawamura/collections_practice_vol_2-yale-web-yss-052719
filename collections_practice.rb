@@ -3,6 +3,5 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  return array.select do |word|
-    word.split.include?("a")
-  end
+  return array.select do {|word|word.split.include?("a")}
+end
