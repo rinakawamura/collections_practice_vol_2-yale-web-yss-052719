@@ -24,7 +24,7 @@ def count_elements(array)
       if hash.keys.include?(elem_key)
         if hash[elem_key] == elem_value
           hash[:count] += 1
-          included = true         
+          included = true
         end
       end
     end
@@ -33,7 +33,3 @@ def count_elements(array)
     end
   end
 end
-        
-    
-        
-    
