@@ -8,3 +8,4 @@ end
 
 def first_wa(array)
   return array.find{|word| word.start_with("wa")}
+end
