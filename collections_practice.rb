@@ -45,4 +45,5 @@ def merge_data(data1, data2)
       end
     end
   end
+  return merged
 end
