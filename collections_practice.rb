@@ -1,4 +1,3 @@
 def begins_with_r(array)
-  return array.map { |element| element.first == "r" }
+  return array.map { |element| element[0] == "r" }
 end
-  
