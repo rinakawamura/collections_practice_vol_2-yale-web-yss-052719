@@ -35,7 +35,7 @@ def count_elements(array)
   return count_array
 end
 
-def merged_data(data1, data2)
+def merge_data(data1, data2)
   merged = []
   data1.each do |key|
     name = key[:first_name]
