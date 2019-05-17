@@ -9,3 +9,5 @@ def contain_a(array)
   end
   puts new_array
 end
+
+contain_a(["earth", "fire", "wind", "water", "heart"])
